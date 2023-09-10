@@ -4,7 +4,7 @@ export default function App() {
   return (
     <>
       <HelloWorld />
-      xin chao 123
+      xin chao 123333
     </>
   );
 }
