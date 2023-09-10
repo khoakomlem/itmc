@@ -1,0 +1,54 @@
+{
+  "extends": ["xo", "xo-typescript/space", "xo-react/space", "prettier"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "rules": {
+        "react/react-in-jsx-scope": "off",
+        "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/triple-slash-reference": "off",
+        "prettier/prettier": [
+          "error",
+          {
+            "editorconfig": true,
+            "singleQuote": true,
+            "jsxSingleQuote": true,
+            "trailingComma": "es5",
+            "importOrder": [
+              "^(react/(.*)$)|^(react$)",
+              "^(next/(.*)$)|^(next$)",
+              "<THIRD_PARTY_MODULES>",
+              "",
+              "^@/types/(.*)$",
+              "^@/lib/(.*)$",
+              "^(@/constants/(.*)$)|^(@/constants$)",
+              "^(@/utils/(.*)$)|^(@/utils$)",
+              "^(@/hooks/(.*)$)|^(@/hooks$)",
+              "^@/components/(.*)$",
+              "^(@/core/(.*)$)|^(@/core$)",
+              "^@/styles/(.*)$",
+              "^@/app/(.*)$",
+              "",
+              "^[./]"
+            ],
+            "importOrderSeparation": false,
+            "importOrderSortSpecifiers": true,
+            "importOrderBuiltinModulesToTop": true,
+            "importOrderParserPlugins": [
+              "typescript",
+              "jsx",
+              "decorators-legacy"
+            ],
+            "importOrderMergeDuplicateImports": true,
+            "importOrderCombineTypeAndValueImports": true,
+            "plugins": ["@ianvs/prettier-plugin-sort-imports"]
+          }
+        ]
+      }
+    }
+  ],
+  "plugins": ["prettier"],
+  "ignorePatterns": ["/*", "!src"],
+  "root": true
+}

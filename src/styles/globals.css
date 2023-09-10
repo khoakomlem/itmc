@@ -1,0 +1,194 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Inter", sans-serif;
+}
+
+@layer utilities {
+  @variants responsive {
+    .masonry-3-col {
+      column-count: 3;
+      column-gap: 1.5rem;
+    }
+
+    .masonry-4-col {
+      column-count: 4;
+      column-gap: 1.5rem;
+    }
+
+    .masonry-5-col {
+      column-count: 5;
+      column-gap: 1.5rem;
+    }
+
+    .masonry-2-col {
+      column-count: 2;
+      column-gap: 1.5rem;
+    }
+
+    .masonry-1-col {
+      column-count: 1;
+      column-gap: 1.5rem;
+    }
+
+    .break-inside {
+      break-inside: avoid;
+    }
+  }
+
+  .line-clamp-10 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+  }
+
+  .line-clamp-8 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+  }
+
+  .line-clamp-6 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+  }
+}
+
+::-webkit-resizer {
+  content: "";
+  color: "#D6BBFB";
+}
+
+.tippy-box[data-theme="tooltip-theme"] {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.875rem;
+  border-radius: 0.375rem;
+  background-color: white;
+  @apply text-[#344054] whitespace-nowrap shadow-lg font-semibold text-xs text-center rounded-lg py-2 px-3 relative;
+}
+
+#note-item > [data-tippy-root]::before {
+  @apply hidden;
+}
+
+div[data-tippy-root]:has(#slash-command)::before {
+  @apply hidden;
+}
+
+.ProseMirror {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  @apply ring-0 outline-none w-full h-full;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.ProseMirror [data-placeholder]::before {
+  color: #adb5bd;
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+p {
+  @apply text-base w-full;
+}
+
+h1 {
+  @apply text-2xl;
+}
+
+h2 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+.hide-scollbar::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eaecf0;
+  @apply border rounded-lg;
+}
+
+.orderedList-content {
+  list-style: none;
+  counter-reset: num;
+}
+
+.orderedList-content li {
+  counter-increment: num;
+  @apply flex;
+}
+
+.orderedList-content li::before {
+  content: "(" counter(num) ")";
+  color: #5531a7;
+  @apply mr-2;
+}
+
+/* 
+input[type="checkbox"]:checked {
+  background-image: url('/public/icons/check.svg');
+} */
+
+.custom-checkbox:checked {
+  background-image: url("/icons/check.svg");
+  background-size: auto;
+  background-position-y: center;
+  background-position-x: center;
+}
+
+.my-masonry-grid {
+  display: flex;
+}
+
+.my-masonry-grid_column {
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column span {
+  width: 100% !important;
+}
+
+.next-image {
+  object-fit: cover;
+}
+
+.my-masonry-grid .my-masonry-grid_column:not(:first-child) {
+  padding-left: 1.5rem;
+}
