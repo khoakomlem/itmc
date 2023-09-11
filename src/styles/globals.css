@@ -84,12 +84,8 @@ div[data-tippy-root]:has(#slash-command)::before {
   @apply hidden;
 }
 
-.ProseMirror {
-  > * + * {
-    margin-top: 0.75em;
-  }
-
-  @apply ring-0 outline-none w-full h-full;
+body {
+  margin: 0 !important;
 }
 
 .ProseMirror p.is-editor-empty:first-child::before {

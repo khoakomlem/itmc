@@ -6,6 +6,10 @@
       "rules": {
         "react/react-in-jsx-scope": "off",
         "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "@typescript-eslint/no-require-imports": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-empty-function": "warn",
         "@typescript-eslint/triple-slash-reference": "off",
         "prettier/prettier": [
@@ -13,6 +17,8 @@
           {
             "editorconfig": true,
             "singleQuote": true,
+            "endofline": true,
+            "tabWith": 2,
             "jsxSingleQuote": true,
             "trailingComma": "es5",
             "importOrder": [
