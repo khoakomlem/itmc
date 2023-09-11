@@ -7,7 +7,7 @@
 }
 
 @layer utilities {
-  @variants responsive {
+  @layer utilities {
     .masonry-3-col {
       column-count: 3;
       column-gap: 1.5rem;
@@ -84,8 +84,12 @@ div[data-tippy-root]:has(#slash-command)::before {
   @apply hidden;
 }
 
-body {
-  margin: 0 !important;
+.ProseMirror {
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  @apply ring-0 outline-none w-full h-full;
 }
 
 .ProseMirror p.is-editor-empty:first-child::before {
