@@ -1,0 +1,9 @@
+@import "../../styles/variables.scss";
+
+:export {
+  defaultColor: $greyscale-700;
+}
+
+.icon {
+  flex-shrink: 0;
+}
