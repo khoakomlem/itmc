@@ -4,6 +4,7 @@
 
 :root {
   font-family: "Inter", sans-serif;
+  background: linear-gradient(175deg, #FFF -12.63%, rgba(137, 213, 255, 0.13) 106.31%);
 }
 
 @layer utilities {
@@ -191,4 +192,16 @@ input[type="checkbox"]:checked {
 
 .my-masonry-grid .my-masonry-grid_column:not(:first-child) {
   padding-left: 1.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #1c74a6, #ff7629);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        width: max-content;
+}
+
+.form-background {
+  background: linear-gradient(92deg, #1A6E9D -3.7%, #031C52 132.1%);
 }

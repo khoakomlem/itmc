@@ -8,6 +8,7 @@
         "@typescript-eslint/naming-convention": "off",
         "@typescript-eslint/no-empty-function": "warn",
         "@typescript-eslint/triple-slash-reference": "off",
+        "react/no-unused-prop-types": "warn",
         "prettier/prettier": [
           "error",
           {
