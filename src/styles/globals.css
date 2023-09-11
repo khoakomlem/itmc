@@ -7,7 +7,7 @@
 }
 
 @layer utilities {
-  @variants responsive {
+  @layer utilities {
     .masonry-3-col {
       column-count: 3;
       column-gap: 1.5rem;
