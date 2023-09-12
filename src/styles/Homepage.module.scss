@@ -1,14 +1,16 @@
 @import "../styles/variables.scss";
 
-
-.banner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.about_us {
-  width: 80%;
-  background-color: linear-gradient(to right, #186998, #093165);
-  border-radius: 77px;
-  
+.container {
+  background: linear-gradient(#fff,rgba(137, 213, 255, 0.5));  
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .about_us {
+    width: 80%;
+    background-color: linear-gradient(to right, #186998, #093165);
+    border-radius: 77px;
+    
+  }
 }

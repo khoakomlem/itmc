@@ -40,7 +40,7 @@
         &:hover {
           color: $dark-0;
           background-color: $green-500;
-          transition: 0.2s;
+          transition: 0.4s;
         }
       }
     }
@@ -71,6 +71,7 @@
       background: linear-gradient(to right, #FCB675, #F6D0AD);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+       
     }
     &_description {
       color: $greyscale-0;
@@ -120,6 +121,9 @@
       padding: 10px;
       display:flex;
       justify-content: space-between;
+      path {
+        fill: #fff;
+      }
       align-items: center;
         &_modal {
           color: $dark-0;
@@ -149,7 +153,7 @@
       &_description { 
         font-size: 16px;
       }
-  }
+    }
 
-}
+  }
 }

@@ -16,7 +16,7 @@ function Header() {
   ];
 
   const socialAccounts: Array<{ icon: string; url: string }> = [
-    { icon: './facebook.svg', url: '#' },
+    { icon: './facebook-white.svg', url: '#' },
     { icon: './google.svg', url: '#' },
     { icon: './youtube.svg', url: '#' },
   ];
@@ -66,9 +66,9 @@ function Header() {
         </div>
         <Modal
           mobileFullHeight
-          backdrop
           headerClassName='py-[8px] flex items-center'
           width='60%'
+          height='100%'
           title={<Image width={99} height={52} src='./logo.svg' alt='logo' />}
           mobilePosition='right'
           className={styles.mobile_header_modal}

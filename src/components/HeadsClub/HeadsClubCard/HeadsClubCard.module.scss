@@ -1,0 +1,36 @@
+@import "../../../styles/variables.scss";
+
+.wrapper {
+  min-width: calc(100%/6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  .avatar {
+    width: 144px;
+    height: 220px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .wrapper {
+    margin-bottom: 20px;
+    min-width: calc(100%/3);
+  }
+}
+
+@media screen and (max-width: $big-mobile) {
+  .wrapper {
+    width: calc(100%/2);
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .wrapper {
+    width: calc(100%/1);
+  }
+}
+
+

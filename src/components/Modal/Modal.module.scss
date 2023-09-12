@@ -25,11 +25,11 @@
 
   &.show {
     overflow: auto;
-    height: 100vh;
+    height: 100%;
     z-index: 8;
 
     .container {
-      max-height: calc(100vh);
+      max-height: calc(100%);
     }
   }
 
