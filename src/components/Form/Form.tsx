@@ -16,7 +16,7 @@ export function Form(props: FormProps): JSX.Element {
         props.className
       )}
     >
-      <div className='text-[white] mb-8'>
+      <div className='text-[white] mb-4 px-8'>
         <img src='/ITMC.svg' alt='ITMC' className='w-[200px] h-[200px] ' />
         <p>Học viện Công nghệ Bưu chính Viễn Thông</p>
         <p>97 Man Thiện, Phường Hiệp Phú, Quận 9, TP. Hồ Chí Minh</p>
