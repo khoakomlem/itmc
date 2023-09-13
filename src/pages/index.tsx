@@ -11,7 +11,6 @@ import {
   HeadsClub,
   type HeadsClubProps,
 } from '@/components/HeadsClub/HeadsClub';
-import { HelloWorld } from '@/components/HelloWorld';
 import { ItemWrapper, type ItemWrapperProps } from '@/components/Item';
 
 import styles from '../styles/Homepage.module.scss';
