@@ -1,4 +1,5 @@
 import React from 'react';
+import { Transition } from '@headlessui/react';
 import { MinusIcon, PlusIcon } from '@heroicons/react/20/solid';
 
 import { cn } from '@/utils';
@@ -14,7 +15,7 @@ export function FaqCard(props: FaqCardProps) {
   return (
     <div
       className={cn(
-        'rounded-[39px] bg-[#F0F0F0] shrink py-8 px-11 flex flex-col',
+        'rounded-[39px] bg-[#F0F0F0] shrink py-8 px-11 flex flex-col duration-200 shadow-lg',
         props.className
       )}
     >
@@ -25,7 +26,7 @@ export function FaqCard(props: FaqCardProps) {
         }}
       >
         <div className='flex flex-1'>
-          <p className='font-[Inter] text-[#1A6E9D] text-2xl font-bold'>
+          <p className='font-[Inter] text-[#1A6E9D] lg:text-2xl text-xl font-bold'>
             {props.question}
           </p>
         </div>
@@ -38,11 +39,19 @@ export function FaqCard(props: FaqCardProps) {
         </div>
       </div>
       <div>
-        {isExpand && (
-          <p className='mt-4 font-[Inter] text-[#000] text-3xl font-[50rem]'>
+        <Transition
+          show={isExpand}
+          enter='transition-opacity duration-500'
+          enterFrom='opacity-0'
+          enterTo='opacity-100'
+          leave='transition-opacity duration-300'
+          leaveFrom='opacity-100'
+          leaveTo='opacity-0'
+        >
+          <p className='mt-4 font-[Inter] text-[#000] lg:text-3xl text-2xl font-[50rem]'>
             {props.answer}
           </p>
-        )}
+        </Transition>
       </div>
     </div>
   );

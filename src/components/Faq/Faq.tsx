@@ -20,7 +20,7 @@ export function Faq(props: FaqProps): JSX.Element {
       )}
     >
       <div className='flex flex-col w-auto'>
-        <span className='gradient-text py-8 font-[Inter] text-5xl font-extrabold w-auto'>
+        <span className='gradient-text py-8 font-[Inter] lg:text-5xl text-4xl font-extrabold w-auto'>
           Câu hỏi thường gặp
         </span>
         <div>
