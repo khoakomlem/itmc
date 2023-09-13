@@ -118,17 +118,17 @@ export default function App() {
         <Department {...departmentList} />
         <HeadsClub {...headsOfClubList} />
         <ItemWrapper
-          className='bg-[#FDFFF6] mt-28'
+          className='bg-[#FDFFF6] mt-[0.75rem]'
           title='Hoạt động và dự án'
           items={fake.items}
         />
         <ItemWrapper
-          className='bg-[#FFF8F4] mt-28'
+          className='bg-[#FFF8F4] mt-[0.75rem]'
           title='Giải thưởng và thành tựu'
           items={fake.items}
         />
         <Faq
-          className='mt-28'
+          className='mt-[0.75rem]'
           items={[
             {
               question:
@@ -143,7 +143,7 @@ export default function App() {
             },
           ]}
         />
-        <Form className='mt-28' />
+        <Form className='mt-[0.75rem]' />
         <br />
         <br />
         <br />

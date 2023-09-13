@@ -90,10 +90,9 @@ function Modal(props: ModalProps) {
         <div className={styles.modal_background}>
           <CustomImage
             priority
+            fill
             src={modalBackgroundUrl}
             alt='media'
-            layout='fill'
-            objectFit='cover'
             quality={50}
           />
         </div>

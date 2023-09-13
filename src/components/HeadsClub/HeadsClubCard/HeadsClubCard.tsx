@@ -12,7 +12,7 @@ export function HeadsClubCard(props: HeadsClubCardProps) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.avatar}>
-        <Image layout='fill' src={props.avatar} alt='avatar' />
+        <Image fill src={props.avatar} alt='avatar' />
       </div>
       <div className='text-base font-bold text-[rgba(0, 0, 0, 1)]'>
         {props.name}

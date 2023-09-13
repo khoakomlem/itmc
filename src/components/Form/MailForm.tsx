@@ -11,7 +11,7 @@ export function MailForm() {
   }
 
   return (
-    <div className='rounded-[30px] bg-[#F4F8FF] px-8 pt-12 pb-7'>
+    <div className='rounded-[30px] bg-[#F4F8FF] px-8 pt-12 pb-7 mt-8'>
       <div className='flex flex-col'>
         <form onSubmit={handleSubmit}>
           <div className='relative flex flex-row'>

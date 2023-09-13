@@ -60,17 +60,17 @@ export function ItemWrapper(props: ItemWrapperProps) {
         props.className
       )}
     >
-      <div className='flex pl-4'>
-        <span className='gradient-text font-[Inter] lg:text-5xl text-4xl py-2 font-extrabold w-[80%]'>
-          {props.title}
-        </span>
-        <div className='flex items-center relative w-[20%]'>
+      <div className='flex flex-row-reverse pl-4'>
+        <div className='relative w-auto flex items-center'>
           <input
             type='button'
-            className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 text-[24px] font-[Inter] absolute right-1'
+            className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 lg:text-2xl text-1xl font-[Inter]'
             value='Chi tiết'
           />
         </div>
+        <span className='gradient-text font-[Inter] md:text-5xl text-3xl py-2 font-extrabold text-left w-[100%] mr-1'>
+          {props.title}
+        </span>
       </div>
       <div
         ref={ref}
@@ -80,13 +80,13 @@ export function ItemWrapper(props: ItemWrapperProps) {
         {scrollLeft ? (
           <button
             type='button'
-            className='sticky h-[100%] my-auto left-0 z-10 active:scale-90 duration-150'
+            className='sticky h-[100%] my-auto left-0 z-10 active:scale-90 duration-150 hidden sm:block'
             onClick={scrollLeftHandler}
           >
             <ChevronLeftIcon className='h-12 w-12 bg-[#616161] rounded-full' />
           </button>
         ) : (
-          <div className='sticky h-[100%] my-auto'>
+          <div className='sticky h-[100%] my-auto hidden sm:block'>
             <div className='right-0 h-12 w-12 rounded-full' />
           </div>
         )}
@@ -97,13 +97,13 @@ export function ItemWrapper(props: ItemWrapperProps) {
         {scrollRight ? (
           <button
             type='button'
-            className='sticky h-[100%] my-auto right-0 active:scale-90 duration-150'
+            className='sticky h-[100%] my-auto right-0 active:scale-90 duration-150 hidden sm:block'
             onClick={scrollRightHandler}
           >
             <ChevronRightIcon className='h-12 w-12 bg-[#616161] rounded-full' />
           </button>
         ) : (
-          <div className='sticky h-[100%] my-auto'>
+          <div className='sticky h-[100%] my-auto hidden sm:block'>
             <div className='right-0 h-12 w-12 rounded-full' />
           </div>
         )}

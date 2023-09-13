@@ -48,7 +48,7 @@ export function FaqCard(props: FaqCardProps) {
           leaveFrom='opacity-100'
           leaveTo='opacity-0'
         >
-          <p className='mt-4 font-[Inter] text-[#000] lg:text-3xl text-2xl font-[50rem]'>
+          <p className='mt-4 font-[Inter] text-[#000] lg:text-2xl text-1xl font-[50rem]'>
             {props.answer}
           </p>
         </Transition>
