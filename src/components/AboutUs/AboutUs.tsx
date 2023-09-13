@@ -18,9 +18,9 @@ export function AboutUs(props: AboutUsProps) {
       </div>
       <div className={styles.wrapper}>
         <Image
+          fill
           src={props.image}
           objectFit='cover'
-          layout='fill'
           alt='ITMC'
           style={{ borderRadius: '77px' }}
         />
