@@ -5,15 +5,24 @@
       "files": ["*.ts", "*.tsx"],
       "rules": {
         "react/react-in-jsx-scope": "off",
+        "react/no-unused-prop-types": "off",
+        "react/function-component-definition": "off",
         "@typescript-eslint/naming-convention": "off",
+        "@typescript-eslint/no-unsafe-assignment": "off",
+        "react/boolean-prop-naming": "off",
+        "@typescript-eslint/no-require-imports": "off",
+        "@typescript-eslint/no-unsafe-call": "off",
+        "@typescript-eslint/no-unused-expressions": "off",
+        "@typescript-eslint/no-explicit-any": "off",
         "@typescript-eslint/no-empty-function": "warn",
         "@typescript-eslint/triple-slash-reference": "off",
-        "react/no-unused-prop-types": "warn",
         "prettier/prettier": [
           "error",
           {
             "editorconfig": true,
+            "endOfLine" : "auto",
             "singleQuote": true,
+            "tabWith": 2,
             "jsxSingleQuote": true,
             "trailingComma": "es5",
             "importOrder": [
