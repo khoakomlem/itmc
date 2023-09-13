@@ -1,5 +1,6 @@
 import Image from 'next/image';
 
+import { AboutUs, type AboutUsProps } from '@/components/AboutUs/AboutUs';
 import {
   Department,
   type DepartmentProps,
@@ -15,6 +16,12 @@ import { ItemWrapper, type ItemWrapperProps } from '@/components/Item';
 
 import styles from '../styles/Homepage.module.scss';
 
+const aboutUs: AboutUsProps = {
+  title: 'Về ITMC',
+  content:
+    'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \n Neque porro quisquam est.Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.',
+  image: './club.svg',
+};
 const fake: ItemWrapperProps = {
   title: 'Hello World',
   items: [
@@ -107,6 +114,7 @@ export default function App() {
     <>
       <Header />
       <div className={styles.container}>
+        <AboutUs {...aboutUs} />
         <Department {...departmentList} />
         <HeadsClub {...headsOfClubList} />
         <ItemWrapper
