@@ -14,30 +14,34 @@ export function FaqCard(props: FaqCardProps) {
   return (
     <div
       className={cn(
-        'rounded-[39px] bg-[#F0F0F0] shrink py-8 px-11 flex flex-row',
+        'rounded-[39px] bg-[#F0F0F0] shrink py-8 px-11 flex flex-col',
         props.className
       )}
     >
-      <div className='flex flex-col flex-1'>
-        <p className='font-[Inter] text-[#1A6E9D] text-2xl font-bold'>
-          {props.question}
-        </p>
-        {isExpand && (
-          <p className='mt-4 font-[Inter] text-[#000] text-[20px] font-[500px]'>
-            {props.answer}
-          </p>
-        )}
-      </div>
       <div
-        className='flex'
+        className='flex flex-row cursor-pointer'
         onClick={() => {
           setIsExpand(!isExpand);
         }}
       >
-        {isExpand ? (
-          <MinusIcon className='w-[40px] cursor-pointer' />
-        ) : (
-          <PlusIcon className='w-[40px] cursor-pointer' />
+        <div className='flex flex-1'>
+          <p className='font-[Inter] text-[#1A6E9D] text-2xl font-bold'>
+            {props.question}
+          </p>
+        </div>
+        <div className='flex'>
+          {isExpand ? (
+            <MinusIcon className='w-[40px] cursor-pointer' />
+          ) : (
+            <PlusIcon className='w-[40px] cursor-pointer' />
+          )}
+        </div>
+      </div>
+      <div>
+        {isExpand && (
+          <p className='mt-4 font-[Inter] text-[#000] text-3xl font-[50rem]'>
+            {props.answer}
+          </p>
         )}
       </div>
     </div>

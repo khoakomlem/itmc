@@ -1,4 +1,6 @@
-import '@fontsource/inter';
+import '@fontsource/inter/400.css';
+import '@fontsource/inter/800.css';
+import '@fontsource/montserrat';
 import '@/styles/globals.css';
 
 import type { ReactElement, ReactNode } from 'react';

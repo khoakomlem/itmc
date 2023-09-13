@@ -5,6 +5,7 @@
 :root {
   font-family: "Inter", sans-serif;
   background: linear-gradient(175deg, #FFF -12.63%, rgba(137, 213, 255, 0.13) 106.31%);
+  font-size: 62.5%;
 }
 
 html {
@@ -184,7 +185,6 @@ input[type="checkbox"]:checked {
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         background-clip: text;
-        width: max-content;
 }
 
 .form-background {

@@ -19,10 +19,10 @@ export function Faq(props: FaqProps): JSX.Element {
         props.className
       )}
     >
-      <div className='flex flex-col'>
-        <h1 className='gradient-text py-8 font-[Inter] text-5xl font-extrabold'>
+      <div className='flex flex-col w-auto'>
+        <span className='gradient-text py-8 font-[Inter] text-5xl font-extrabold w-auto'>
           Câu hỏi thường gặp
-        </h1>
+        </span>
         <div>
           {props.items.map((item, index) => (
             <FaqCard

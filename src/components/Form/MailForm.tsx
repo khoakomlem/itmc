@@ -1,36 +1,35 @@
 export function MailForm() {
   return (
-    <div className='rounded-[30px] bg-[#F4F8FF]'>
-      <div className='flex flex-col items-center justify-center'>
-        <div className='flex flex-row'>
-          <span className='flex-none gradient-text text-[48px] font-[800]'>
+    <div className='rounded-[30px] bg-[#F4F8FF] p-12'>
+      <div className='flex flex-col'>
+        <div className='relative flex flex-row'>
+          <span className='gradient-text text-5xl font-[800] w-[70%]'>
             Liên hệ với ITMC
           </span>
           <input
-            className='flex-none bg-[#1C74A6] rounded-[30px] w-[100px]'
+            className='absolute right-[1rem] flex-none bg-[#1C74A6] rounded-[3rem] w-[30%] max-w-[10rem] h-[3rem] text-white'
             type='submit'
             value='Gửi'
           />
         </div>
         <div>
           <input
-            className='bg-[#1C74A6] rounded-11px'
+            className='w-[100%] rounded-xl bg-white my-3'
             type='text'
             placeholder='Họ tên của bạn'
           />
         </div>
         <div>
           <input
-            className='bg-[#1C74A6] rounded-11px'
+            className='w-[100%] rounded-xl bg-white my-3'
             type='text'
             placeholder='Email của bạn'
           />
         </div>
         <div>
-          <input
-            className='bg-[#1C74A6] rounded-11px'
-            type='text'
-            placeholder='Lời nhắn của bạn'
+          <textarea
+            className='w-[100%] rounded-xl bg-white my-3 h-[10rem] min-h-[3rem] max-h-[20rem]'
+            placeholder='Lời nhắc của bạn'
           />
         </div>
       </div>
