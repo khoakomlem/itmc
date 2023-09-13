@@ -1,0 +1,72 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin: 80px 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  .wrapper {
+    border-radius: 77px;
+    text-align: center;
+    width: 43%;
+    height: 561px;
+    position: relative;
+    &.left_col {
+      background: linear-gradient(to right, rgba(24, 105, 152, 1), rgba(9, 49, 101, 1));
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .text {
+      color: $greyscale-0;
+      font-weight: 400;
+      font-size: 24px;
+    }
+    .title {
+      color: $greyscale-0;
+      font-size: 48px !important;
+      font-weight: 800 !important;
+    }
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .container {
+    margin: 60px 0 30px 0;
+    flex-direction: column;
+    .wrapper {
+      width: 70%;
+      height: 450px;
+      .text {
+        font-size: 18px;
+      }
+      .title {
+        color: $greyscale-0;
+        font-size: 36px !important;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .container {
+    margin: 50px 0 20px 0;
+    flex-direction: column;
+    .wrapper {
+      width: 95%;
+      height: 400px;
+      .text {
+        font-size: 16px;
+      }
+      .title {
+        color: $greyscale-0;
+        font-size: 28px !important;
+      }
+    }
+  }
+  }
