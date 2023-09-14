@@ -117,43 +117,42 @@
     .mobile_header {
       position: relative;
       z-index: 10;
-      background-color: rgba(255, 255, 255, 0.1)   ;
+      background-color: rgba(255, 255, 255, 0.1);
       padding: 10px;
-      display:flex;
-      justify-content: space-between;
-      path {
-        fill: #fff;
-      }
+      display: flex;
+      justify-content: flex-start;
       align-items: center;
-        &_modal {
-          color: $dark-0;
-          font-size: 17px;
-          font-weight: $font-normal;
-          .nav_list_wrapper {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            .nav_list {
-              width: 50%;
-              gap: 30px;
-              display: flex;
-              flex-wrap: wrap;
-              justify-content: space-between;
-            }
-          }
-        }
+
+      .bottom_menu {
+        position: fixed;
+        width: 95%;
+        top: 90%;
+        background: linear-gradient(to right, rgba(46, 103, 170, 1), rgba(4, 35, 72, 0.87));
+        border-radius: 27.5px;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        transition: transform 0.3s; /* Add a smooth transition for the bottom menu */
+        transform: translateY(0); /* Initially, the menu is not hidden */
       }
-    .intro {
-     top: 30%;
-     left: 5%;
-     max-width: 400px;
-      &_title {
-        font-size: 30px;
-      }
-      &_description { 
-        font-size: 16px;
+
+      .bottom_menu.hidden {
+        transform: translateY(150%); /* Move the menu down to hide it */
       }
     }
 
+    .intro {
+      top: 30%;
+      left: 5%;
+      max-width: 400px;
+
+      &_title {
+        font-size: 30px;
+      }
+
+      &_description {
+        font-size: 16px;
+      }
+    }
   }
 }

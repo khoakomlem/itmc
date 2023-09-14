@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Router, { useRouter } from 'next/router';
 
 import { AboutUs, type AboutUsProps } from '@/components/AboutUs/AboutUs';
 import {
@@ -110,25 +111,26 @@ const headsOfClubList: HeadsClubProps = {
 };
 
 export default function App() {
+  const router = useRouter();
   return (
     <>
-      <Header />
+      <Header path={router.pathname} />
       <div className={styles.container}>
         <AboutUs {...aboutUs} />
         <Department {...departmentList} />
         <HeadsClub {...headsOfClubList} />
         <ItemWrapper
-          className='bg-[#FDFFF6] mt-[0.75rem]'
+          className='bg-[#FDFFF6] mt-[0.75rem] auto-margin-top'
           title='Hoạt động và dự án'
           items={fake.items}
         />
         <ItemWrapper
-          className='bg-[#FFF8F4] mt-[0.75rem]'
+          className='bg-[#FFF8F4] mt-[0.75rem] auto-margin-top'
           title='Giải thưởng và thành tựu'
           items={fake.items}
         />
         <Faq
-          className='mt-[0.75rem]'
+          className='mt-[0.75rem] auto-margin-top'
           items={[
             {
               question:
@@ -143,7 +145,7 @@ export default function App() {
             },
           ]}
         />
-        <Form className='mt-[0.75rem]' />
+        <Form className='mt-[0.75rem] auto-margin-top' />
         <br />
         <br />
         <br />

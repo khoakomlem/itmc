@@ -71,7 +71,7 @@ export function MailForm() {
               id='message'
               name='message'
               className='w-[100%] rounded-xl bg-white my-3 h-[10rem] min-h-[3rem] max-h-[20rem] p-3'
-              placeholder='Lời nhắc của bạn'
+              placeholder='Lời nhắn của bạn'
             />
           </div>
         </form>

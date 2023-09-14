@@ -23,6 +23,7 @@ export default function Document() {
         {/* <link rel="shortcut icon" href="/static/logo.svg" /> */}
         <link rel='icon' href='/logo.svg' />
         <script async src='https://cdn.tailwindcss.com' />
+        <title>ITMC</title>
       </Head>
       <body>
         <Main />
