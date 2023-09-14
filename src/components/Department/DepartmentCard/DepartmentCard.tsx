@@ -25,9 +25,9 @@ export function DepartmentCard({
       <div className={styles.content}>{props.content}</div>
       <div className={styles.bottom}>
         <div className={styles.title}>{props.title}</div>
-        <div className={styles.button}>
+        {/* <div className={styles.button}>
           <Link href={props.url}>Chi tiết</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

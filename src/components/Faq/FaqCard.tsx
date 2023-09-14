@@ -41,10 +41,10 @@ export function FaqCard(props: FaqCardProps) {
       <div>
         <Transition
           show={isExpand}
-          enter='transition-opacity duration-500'
+          enter='transition-opacity duration-400'
           enterFrom='opacity-0'
           enterTo='opacity-100'
-          leave='transition-opacity duration-300'
+          leave='transition-opacity duration-400'
           leaveFrom='opacity-100'
           leaveTo='opacity-0'
         >
