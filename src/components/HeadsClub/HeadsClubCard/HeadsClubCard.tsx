@@ -17,7 +17,7 @@ export function HeadsClubCard(props: HeadsClubCardProps) {
       <div className='text-base font-bold text-[rgba(0, 0, 0, 1)]'>
         {props.name}
       </div>
-      <div className='text-base font-semibold text-[rgba(0,0,0,1)]'>
+      <div className='text-base font-medium text-[rgba(0,0,0,1)]'>
         {props.role}
       </div>
     </div>

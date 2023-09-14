@@ -15,38 +15,42 @@ export type HeaderProps = {
 function Header(props: HeaderProps) {
   const router = useRouter();
   const navList: Array<{ label: string; value: string }> = [
-    { label: 'Home', value: '#' },
-    { label: 'About us', value: '#' },
-    { label: 'Blog', value: '#' },
-    { label: 'Activities', value: '#' },
+    { label: 'Home', value: '' },
+    { label: 'About us', value: '' },
+    { label: 'Blog', value: '' },
+    { label: 'Event', value: '' },
   ];
 
   const socialAccounts: Array<{ icon: string; url: string }> = [
-    { icon: './facebook-white.svg', url: '#' },
-    { icon: './google.svg', url: '#' },
-    { icon: './youtube.svg', url: '#' },
+    { icon: './facebook-white.svg', url: '' },
+    { icon: './google.svg', url: '' },
+    { icon: './youtube.svg', url: '' },
   ];
 
   const iconMobileList: Array<{
     activeIcon: string;
     unactiveIcon: string;
     path: string;
+    url: string;
   }> = [
-    { activeIcon: 'home-active', unactiveIcon: 'home', path: '/' },
+    { activeIcon: 'home-active', unactiveIcon: 'home', path: '/', url: '' },
     {
       activeIcon: 'event-active',
       unactiveIcon: 'event',
       path: '/event',
+      url: '',
     },
     {
       activeIcon: 'about-us-active',
       unactiveIcon: 'about-us',
       path: '/about-us',
+      url: '',
     },
     {
       activeIcon: 'blogs-active',
       unactiveIcon: 'blogs',
       path: '/blogs',
+      url: '',
     },
   ];
 
@@ -118,10 +122,7 @@ function Header(props: HeaderProps) {
         >
           {isArray(iconMobileList) &&
             iconMobileList.map((item, index) => (
-              <div
-                key={index++}
-                onClick={() => (window.location.href = `${item.path}`)}
-              >
+              <Link key={index++} href={item.url}>
                 <Icon
                   style={{ cursor: 'pointer' }}
                   width={35}
@@ -132,7 +133,7 @@ function Header(props: HeaderProps) {
                       : item.unactiveIcon
                   }
                 />
-              </div>
+              </Link>
             ))}
         </div>
       </div>

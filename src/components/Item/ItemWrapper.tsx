@@ -11,6 +11,7 @@ export type ItemWrapperProps = {
   readonly title: string;
   readonly items: ItemCardProps[];
   readonly className?: string;
+  readonly is_shown?: boolean;
 };
 
 export function ItemWrapper(props: ItemWrapperProps) {
@@ -56,17 +57,21 @@ export function ItemWrapper(props: ItemWrapperProps) {
   return (
     <div
       className={cn(
-        'container mx-auto px-4 sm:px-6 lg:px-8 rounded-[30px] mt-3 py-8 shadow-sm',
+        'container mx-auto px-4 sm:px-6 lg:px-9 rounded-[30px] mt-3 py-8 shadow-sm',
         props.className
       )}
     >
       <div className='flex flex-row-reverse pl-4'>
         <div className='relative w-auto flex items-center'>
-          <input
-            type='button'
-            className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 lg:text-2xl text-1xl font-[Inter] cursor-pointer'
-            value='Chi tiết'
-          />
+          {props.is_shown ? (
+            <input
+              type='button'
+              className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 lg:text-2xl text-1xl font-[Inter] cursor-pointer'
+              value='Chi tiết'
+            />
+          ) : (
+            ''
+          )}
         </div>
         <span className='gradient-text font-[Inter] md:text-5xl text-3xl py-2 font-extrabold text-left w-[100%] mr-1'>
           {props.title}
