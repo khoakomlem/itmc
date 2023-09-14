@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import classNames from 'classnames';
 import { isArray } from 'lodash';
 
-import CustomLink from '../CustomLink';
 import Icon from '../Icon/Icon';
 import Modal from '../Modal/Modal';
 import styles from './Header.module.scss';
