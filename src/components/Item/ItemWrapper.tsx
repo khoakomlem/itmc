@@ -64,7 +64,7 @@ export function ItemWrapper(props: ItemWrapperProps) {
         <div className='relative w-auto flex items-center'>
           <input
             type='button'
-            className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 lg:text-2xl text-1xl font-[Inter]'
+            className='rounded-[3rem] bg-[#D9D9D9] py-1 px-5 lg:text-2xl text-1xl font-[Inter] cursor-pointer'
             value='Chi tiết'
           />
         </div>
