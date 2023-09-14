@@ -30,15 +30,15 @@
       background: #1c74a6 ;
       &::before {
         z-index: 5;
-        top: 100%;
+        top: 91%;
         position: absolute;
         content: "";
         display: block;
         background: url("/blue-quote.svg") no-repeat;
-        background-position: 5% 100%;
+        background-position: 5% 95%;
         background-size: 100%;
         width: 16px;
-        height: 12px;
+        height: 16px;
         left: 7%;
       }
     }
@@ -46,7 +46,7 @@
       background-color:#ff7829; 
       &::before {
         z-index: 5;
-        top: 100%;
+        top: 91%;
         position: absolute;
         content: "";
         display: block;
@@ -54,7 +54,7 @@
         background-position: 5% 100%;
         background-size: 100%;
         width: 16px;
-        height: 12px;
+        height: 16px;
         left: 7%;
       }
     }
@@ -77,12 +77,21 @@
 @media screen and (max-width: $big-mobile) {
   .wrapper {
     width: calc(100%/2);
+    .pop_up_message {
+      left: 30%;
+      top: -24%;
+    }
   }
 }
 
 @media screen and (max-width: $mobile) {
   .wrapper {
     width: calc(100%/1);
+    .pop_up_message {
+      max-width: 220px;
+      left: 40%;
+      top: -25%;
+    }
   }
 }
 

@@ -42,10 +42,10 @@ export function HeadsClubCard({
         {props.role}
       </div>
       <div
-        className={classNames(styles.pop_up_message, {
+        className={classNames(styles.pop_up_message, styles.show, {
           [styles.blue]: color === 'blue',
           [styles.orange]: color === 'orange',
-          [styles.show]: isHovered,
+          // [styles.show]: isHovered,
         })}
       >
         <div className={styles.message}>{props.message}</div>
