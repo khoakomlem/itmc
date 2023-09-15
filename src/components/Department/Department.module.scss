@@ -4,11 +4,6 @@
 }
 
 @media screen and (max-width: 968px) {
-  .title {
-    width: auto;
-    font-size: 36px !important;
-    padding: 0.5rem !important;
-  }
   .wrapper {
     margin-top: 20px;
     flex-direction: column;
@@ -19,10 +14,6 @@
 }
 
 @media screen and (max-width: 768px) {
-  .title {
-    font-size: 22px;
-    padding: 0.5rem;
-  }
   .wrapper {
     flex-direction: column;
     gap: 40px;

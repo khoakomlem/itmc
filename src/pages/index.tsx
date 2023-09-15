@@ -75,7 +75,7 @@ const departmentList: DepartmentProps = {
 };
 
 const headsOfClubList: HeadsClubProps = {
-  title: 'Ban Điều hành ITMC gồm những ai?',
+  title: 'Ban điều hành ITMC gồm những ai?',
   list: [
     {
       name: 'Trần Thu Mây',

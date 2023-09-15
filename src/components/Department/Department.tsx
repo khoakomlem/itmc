@@ -19,13 +19,13 @@ export function Department(props: DepartmentProps) {
   return (
     <div
       className={cn(
-        'container mx-auto px-4 sm:px-6 lg:px-8 rounded-[30px] mt-3 py-8 shadow-sm overflow:auto',
+        'container mx-auto px-4 sm:px-6 lg:px-8 rounded-[30px] mt-3 py-8 sm:py-3 shadow-sm overflow:auto',
         props.className
       )}
     >
       <h1
         className={classNames(
-          'gradient-text py-8 font-[Inter] text-5xl font-extrabold',
+          'gradient-text py-8 sm:py-3 font-[Inter] font-extrabold title w-auto',
           styles.title
         )}
       >
