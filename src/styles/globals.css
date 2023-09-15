@@ -211,10 +211,19 @@ input[type="checkbox"]:checked {
   margin-top: 80px !important;
 }
 
+@media screen and (min-width:1536px) {
+  .container {
+    max-width: 1297px !important;
+  }
+}
+
 @media screen and (max-width: 978px) {
   .auto-margin-top {
     margin-top: 60px !important;
   } 
+  .linear-title {
+  
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -222,3 +231,4 @@ input[type="checkbox"]:checked {
     margin-top: 40px !important;
   } 
 }
+
