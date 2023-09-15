@@ -25,7 +25,7 @@ export function Department(props: DepartmentProps) {
     >
       <h1
         className={classNames(
-          'gradient-text py-8 font-[Inter] text-5xl font-extrabold',
+          'gradient-text py-8 font-[Inter] font-extrabold title w-auto',
           styles.title
         )}
       >

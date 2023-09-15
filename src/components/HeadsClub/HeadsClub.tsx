@@ -25,7 +25,7 @@ export function HeadsClub(props: HeadsClubProps) {
     >
       <h1
         className={classNames(
-          'gradient-text py-8 font-[Inter] text-5xl font-extrabold',
+          'gradient-text py-8 font-[Inter] title font-extrabold w-auto',
           styles.title
         )}
       >

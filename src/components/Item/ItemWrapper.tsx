@@ -68,7 +68,7 @@ export function ItemWrapper(props: ItemWrapperProps) {
             value='Chi tiết'
           />
         </div>
-        <span className='gradient-text font-[Inter] md:text-5xl text-3xl py-2 font-extrabold text-left w-[100%] mr-1'>
+        <span className='gradient-text font-[Inter] title py-2 font-extrabold text-left w-[100%] mr-1'>
           {props.title}
         </span>
       </div>
