@@ -15,7 +15,7 @@ export function MailForm() {
       <div className='flex flex-col'>
         <form onSubmit={handleSubmit}>
           <div className='relative flex flex-row'>
-            <span className='gradient-text text-5xl font-[800] w-[70%] py-1'>
+            <span className='gradient-text title font-[800] w-[70%] py-1'>
               Liên hệ với ITMC
             </span>
             <div className='flex items-center'>

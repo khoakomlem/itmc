@@ -57,7 +57,7 @@ export function ItemWrapper(props: ItemWrapperProps) {
   return (
     <div
       className={cn(
-        'container mx-auto px-4 sm:px-6 lg:px-9 rounded-[30px] mt-3 py-8 shadow-sm',
+        'container mx-auto px-4 sm:px-6 lg:px-9 rounded-[30px] mt-3 py-8 sm:py-3 shadow-sm',
         props.className
       )}
     >
@@ -73,13 +73,13 @@ export function ItemWrapper(props: ItemWrapperProps) {
             ''
           )}
         </div>
-        <span className='gradient-text font-[Inter] md:text-5xl text-3xl py-2 font-extrabold text-left w-[100%] mr-1'>
+        <span className='gradient-text font-[Inter] title py-2 font-extrabold text-left w-[100%] mr-1'>
           {props.title}
         </span>
       </div>
       <div
         ref={ref}
-        className='container relative overflow-x-scroll flex flex-row py-8 hidescrollbar scroll-smooth select-none'
+        className='container relative overflow-x-scroll flex flex-row py-8 sm:py-3 hidescrollbar scroll-smooth select-none'
         onScroll={onScroll}
       >
         {scrollLeft ? (

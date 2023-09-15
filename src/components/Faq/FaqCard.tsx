@@ -15,7 +15,7 @@ export function FaqCard(props: FaqCardProps) {
   return (
     <div
       className={cn(
-        'rounded-[39px] bg-[#F0F0F0] shrink py-8 px-11 flex flex-col duration-200 shadow-lg',
+        'rounded-[39px] bg-[#F0F0F0] shrink py-8 sm:py-3 px-11 flex flex-col duration-200 shadow-lg',
         props.className
       )}
     >

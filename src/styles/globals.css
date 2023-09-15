@@ -211,14 +211,35 @@ input[type="checkbox"]:checked {
   margin-top: 80px !important;
 }
 
+.title {
+  font-size: 48px!important;
+}
+
+@media screen and (min-width:1536px) {
+  .container {
+    max-width: 1297px !important;
+  }
+}
+
 @media screen and (max-width: 978px) {
   .auto-margin-top {
     margin-top: 60px !important;
-  } 
+  }
 }
 
 @media screen and (max-width: 768px) {
   .auto-margin-top {
     margin-top: 40px !important;
   } 
+  .title {
+    font-size: 36px!important;
+  }
 }
+
+@media screen and (max-width: 575px) {
+  .title {
+    font-size: 24px!important;
+    margin-bottom: -10px !important;
+  }
+}
+

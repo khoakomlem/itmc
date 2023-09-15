@@ -15,12 +15,12 @@ export function Faq(props: FaqProps): JSX.Element {
   return (
     <div
       className={cn(
-        'container mx-auto px-4 sm:px-6 lg:px-8 rounded-[30px] py-8 bg-[#FFF] shadow-sm',
+        'container mx-auto px-4 sm:px-6 lg:px-8 rounded-[30px] py-8 sm:py-3 bg-[#FFF] shadow-sm',
         props.className
       )}
     >
       <div className='flex flex-col w-auto'>
-        <span className='gradient-text py-8 font-[Inter] md:text-5xl text-3xl font-extrabold w-auto'>
+        <span className='gradient-text py-8 sm:py-3 font-[Inter] title font-extrabold w-auto  leading-[30px]'>
           Câu hỏi thường gặp
         </span>
         <div>
