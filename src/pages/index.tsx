@@ -61,14 +61,14 @@ const departmentList: DepartmentProps = {
       title: 'Ban Lập trình',
       content:
         'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.',
-      url: '#',
+      url: '',
       team: 'code',
     },
     {
       title: 'Ban Thiết kế',
       content:
         'Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.',
-      url: '#',
+      url: '',
       team: 'design',
     },
   ],
@@ -81,31 +81,44 @@ const headsOfClubList: HeadsClubProps = {
       name: 'Trần Thu Mây',
       role: 'Chủ nhiệm CLB',
       avatar: './mol-may.svg',
+      color: 'orange',
+      message: 'Không xinh đẹp thì mình xingtu',
     },
     {
       name: 'Nguyễn Nhật Minh',
       role: 'Phó chủ nhiệm CLB',
       avatar: './haise.svg',
+      color: 'blue',
+      message:
+        'It is not that Im so smart. \n     But I stay with the questions much longer.',
     },
     {
       name: 'Nguyễn Trần Thanh Hằng',
       role: 'Trưởng ban Thiết kế',
       avatar: './thanhhang.svg',
+      color: 'orange',
+      message: 'Không xinh đẹp thì mình xingtu',
     },
     {
       name: 'Đinh Tuấn Dương',
       role: 'Trưởng ban Lập trình',
       avatar: './tuanduong.svg',
+      color: 'blue',
+      message: 'Không xinh đẹp thì mình xingtu',
     },
     {
       name: 'Thái Yến Linh',
       role: 'Phó ban Thiết kế',
       avatar: './linhthai.svg',
+      color: 'orange',
+      message: 'Không xinh đẹp thì mình xingtu',
     },
     {
       name: 'Trần Vũ Phương Nam',
       role: 'Phó ban Lập trình',
       avatar: './fungoman.svg',
+      color: 'blue',
+      message: 'Không xinh đẹp thì mình xingtu',
     },
   ],
 };
@@ -123,11 +136,13 @@ export default function App() {
           className='bg-[#FDFFF6] mt-[0.75rem] auto-margin-top'
           title='Hoạt động và dự án'
           items={fake.items}
+          is_shown={false}
         />
         <ItemWrapper
           className='bg-[#FFF8F4] mt-[0.75rem] auto-margin-top'
           title='Giải thưởng và thành tựu'
           items={fake.items}
+          is_shown={false}
         />
         <Faq
           className='mt-[0.75rem] auto-margin-top'

@@ -10,8 +10,8 @@ export type ItemCardProps = {
 
 export function ItemCard(props: ItemCardProps): JSX.Element {
   return (
-    <div className='divide-gray-200 rounded-lg bg-white text-center shadow-lg h-[22rem] mx-4 min-w-[300px]'>
-      <div className='relative flex flex-1 flex-col items-center h-[65%] bg-[#1C74A6] card-slide-item'>
+    <div className='divide-gray-200 rounded-lg bg-white text-center shadow-lg h-[22rem] mx-4 min-w-[273px]'>
+      <div className='relative flex flex-1 flex-col items-center h-[65%] bg-[#1C74A6] card-slide-item cursor-pointer'>
         <Image
           fill
           alt='Activity1'
