@@ -140,9 +140,13 @@ function Header(props: HeaderProps) {
       <div className={styles.intro}>
         <div className={styles.intro_title}>We are ITMC</div>
         <div className={styles.intro_description}>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut
-          fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem
-          sequi nesciunt. Neque porro quisquam est.
+          Xin chào bạn, cảm ơn bạn đã ghé thăm CLB ITMC chúng mình! Chúng mình
+          là CLB ITMC đến từ Học viện Công nghệ Bưu chính Viễn thông Cơ sở tại
+          Thành phố Hồ Chí Minh. ITMC là một nơi dành cho những người có niềm
+          yêu thích, đam mê công nghệ thông tin và đa phương tiện. Đó cũng chính
+          là tên gọi của CLB chúng mình Information Technology and Multimedia
+          Club. Chúng mình luôn luôn đón chào những ai có chung sở thích đến với
+          CLB, làm quen, kết bạn, giúp đỡ và chia sẽ kiến thức cho nhau.
         </div>
       </div>
     </div>
