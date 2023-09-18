@@ -21,19 +21,22 @@ export function Form(props: FormProps): JSX.Element {
         <p>Học viện Công nghệ Bưu chính Viễn Thông</p>
         <p>97 Man Thiện, Phường Hiệp Phú, Quận 9, TP. Hồ Chí Minh</p>
         <Contact
-          className='mt-4'
+          className='my-6 cursor-pointer'
           icon={<img src='/facebook.svg' className='w-7 h-7' />}
-          content='(+84) 28 7300 2222'
+          url='#'
+          content='Facebook'
         />
         <Contact
-          className='mt-3'
+          className='my-6 cursor-pointer'
           icon={<img src='/tiktok.svg' className='w-7 h-7' />}
-          content='(+84) 28 7300 2222'
+          url='#'
+          content='Facebook'
         />
         <Contact
-          className='mt-3'
+          className='my-6 cursor-pointer'
           icon={<img src='/email.svg' className='w-7 h-7' />}
-          content='(+84) 28 7300 2222'
+          url='https://www.facebook.com/'
+          content='Facebook'
         />
       </div>
       <div>

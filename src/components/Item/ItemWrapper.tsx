@@ -57,7 +57,7 @@ export function ItemWrapper(props: ItemWrapperProps) {
   return (
     <div
       className={cn(
-        'container mx-auto px-4 sm:px-6 lg:px-9 rounded-[30px] mt-3 py-8 sm:py-3 shadow-sm',
+        'container mx-auto px-4 sm:px-6 lg:px-9 rounded-[30px] my-20 sm:my-10 py-8 sm:py-3 shadow-sm',
         props.className
       )}
     >
