@@ -18,7 +18,11 @@ export function Contact(props: ContactProps): JSX.Element {
       )}
     >
       {props.icon}
-      <a target='_blank' href={props.url} rel='noreferrer'>
+      <a
+        target='_blank'
+        href={props.content === 'Email' ? `"mailto:${props.url}` : props.url}
+        rel='noreferrer'
+      >
         <p className='text-[20px]'>{props.content}</p>
       </a>
     </div>

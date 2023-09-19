@@ -23,20 +23,20 @@ export function Form(props: FormProps): JSX.Element {
         <Contact
           className='my-6 cursor-pointer'
           icon={<img src='/facebook.svg' className='w-7 h-7' />}
-          url='#'
+          url='https://www.facebook.com/it.multimedia.club'
           content='Facebook'
         />
         <Contact
           className='my-6 cursor-pointer'
           icon={<img src='/tiktok.svg' className='w-7 h-7' />}
-          url='#'
-          content='Facebook'
+          url='https://www.tiktok.com/@itmc_ptithcm?fbclid=IwAR2Lmr2JjTHC6dudUaNt8viETmM_XDwsvKhJKLBOFPOU4Sea8G4oNn2hhiY'
+          content='Tiktok'
         />
         <Contact
           className='my-6 cursor-pointer'
           icon={<img src='/email.svg' className='w-7 h-7' />}
           url='https://www.facebook.com/'
-          content='Facebook'
+          content='Email'
         />
       </div>
       <div>

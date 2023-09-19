@@ -10,23 +10,30 @@ import Modal from '../Modal/Modal';
 import styles from './Header.module.scss';
 
 export type HeaderProps = {
-  readonly path: string;
+  readonly path?: string;
 };
 function Header(props: HeaderProps) {
   const router = useRouter();
   const navList: Array<{ label: string; value: string }> = [
-    { label: 'Home', value: '' },
-    { label: 'About us', value: '' },
-    { label: 'Blog', value: '' },
-    { label: 'Event', value: '' },
+    { label: 'Home', value: '/' },
+    { label: 'About us', value: '/about-us' },
+    { label: 'Blog', value: '/blogs' },
+    { label: 'Event', value: '/events' },
   ];
 
   const socialAccounts: Array<{ icon: string; url: string }> = [
-    { icon: './facebook-white.svg', url: '' },
-    { icon: './google.svg', url: '' },
-    { icon: './youtube.svg', url: '' },
+    {
+      icon: './facebook-white.svg',
+      url: 'https://www.facebook.com/it.multimedia.club',
+    },
+    { icon: './google.svg', url: 'clb.itmc@student.ptithcm.edu.vn' },
+    {
+      icon: './tiktok-white.svg',
+      url: 'https://www.tiktok.com/@itmc_ptithcm?fbclid=IwAR2Lmr2JjTHC6dudUaNt8viETmM_XDwsvKhJKLBOFPOU4Sea8G4oNn2hhiY',
+    },
   ];
 
+  //sau này có env sẽ thay vào đây
   const iconMobileList: Array<{
     activeIcon: string;
     unactiveIcon: string;
@@ -38,19 +45,19 @@ function Header(props: HeaderProps) {
       activeIcon: 'event-active',
       unactiveIcon: 'event',
       path: '/event',
-      url: '',
+      url: '/event',
     },
     {
       activeIcon: 'about-us-active',
       unactiveIcon: 'about-us',
       path: '/about-us',
-      url: '',
+      url: '/event',
     },
     {
       activeIcon: 'blogs-active',
       unactiveIcon: 'blogs',
       path: '/blogs',
-      url: '',
+      url: '/event',
     },
   ];
 
@@ -81,10 +88,6 @@ function Header(props: HeaderProps) {
     };
   }, [prevScrollY, isHidden]);
 
-  // Const MobileIcon = (path: string) => {
-  //   return <Icon
-  // }
-
   const [showMenuModal, setShowMenuModal] = useState(false);
 
   return (
@@ -97,7 +100,7 @@ function Header(props: HeaderProps) {
           {isArray(navList) &&
             navList.map((item: any) => (
               <div key={item.label} className={styles.item}>
-                {item.label}
+                <Link href={item.value}>{item.label}</Link>
               </div>
             ))}
         </div>
@@ -105,7 +108,17 @@ function Header(props: HeaderProps) {
           {isArray(socialAccounts) &&
             socialAccounts.map((item: any) => (
               <div key={item.icon} className={styles.item}>
-                <Image fill src={item.icon} alt='social-network' />
+                <a
+                  href={
+                    item.icon === './google.svg'
+                      ? `mailto:${item.url}`
+                      : item.url
+                  }
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <Image fill src={item.icon} alt='social-network' />
+                </a>
               </div>
             ))}
         </div>

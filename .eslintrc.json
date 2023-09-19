@@ -12,6 +12,8 @@
         "react/boolean-prop-naming": "off",
         "@typescript-eslint/no-require-imports": "off",
         "@typescript-eslint/no-unsafe-call": "off",
+        "capitalized-comments": "off",
+        "spaced-comment": "off",
         "no-return-assign": "off",
         "react/prop-types": "off",
         "@typescript-eslint/no-unused-expressions": "off",
